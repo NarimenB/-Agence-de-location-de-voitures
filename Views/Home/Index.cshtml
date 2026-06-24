@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Brand>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="mt-4">
+    <h2>Available Brands</h2>
+    <ul>
+        @foreach (var brand in Model)
+        {
+            <li>@brand.Name (@brand.CountryOfOrigin)</li>
+        }
+    </ul>
+</div>
