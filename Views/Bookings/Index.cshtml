@@ -1,0 +1,31 @@
+@model IEnumerable<Locatic.Models.Booking>
+
+<h1>Réservations</h1>
+
+<a asp-action="Create" class="btn btn-primary">Ajouter une réservation</a>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Client</th>
+            <th>Voiture</th>
+            <th>Modèle</th>
+            <th>Marque</th>
+            <th>Date début</th>
+            <th>Date fin</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+            <tr>
+                <td>@booking.Customer.FirstName @booking.Customer.LastName</td>
+                <td>@booking.Car.LicensePlate</td>
+                <td>@booking.Car.CarModel.Name</td>
+                <td>@booking.Car.CarModel.Brand.Name</td>
+                <td>@booking.StartDate.ToString("dd/MM/yyyy")</td>
+                <td>@booking.EndDate.ToString("dd/MM/yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>
