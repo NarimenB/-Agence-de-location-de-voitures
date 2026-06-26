@@ -14,8 +14,8 @@ and survives server restarts.
 
 ## Group Members
 - Narimen B — Data layer, models, database, brands & car models
-- à Remplir — Cars & customers CRUD
--  à remplir— Bookings & business rules
+- Melyssa Bertille— Cars & customers CRUD
+-  Dihya Ouchene— Bookings & business rules
 
 ## Tech Stack
 - ASP.NET Core MVC (.NET 8)
