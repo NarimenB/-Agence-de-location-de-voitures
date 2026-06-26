@@ -13,9 +13,9 @@ All data is stored in a SQLite database powered by Entity Framework Core,
 and survives server restarts.
 
 ## Group Members
-- Narimen B — Data layer, models, database, brands & car models
-- à Remplir — Cars & customers CRUD
--  à remplir— Bookings & business rules
+- Narimen Boumaout — Data layer, models, database, brands & car models
+- Melyssa Bertille— Cars & customers CRUD
+-  Dihya Ouchene— Bookings & business rules
 
 ## Tech Stack
 - ASP.NET Core MVC (.NET 8)
