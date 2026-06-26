@@ -1,16 +1,16 @@
 @model Locatic.Models.Customer
 
-<h1>Ajouter un client</h1>
+<h1>Add Customer</h1>
 
 <form asp-action="Create" method="post">
     <div class="mb-3">
-        <label asp-for="LastName" class="form-label">Nom</label>
+        <label asp-for="LastName" class="form-label">Last Name</label>
         <input asp-for="LastName" class="form-control" />
         <span asp-validation-for="LastName" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
-        <label asp-for="FirstName" class="form-label">Prénom</label>
+        <label asp-for="FirstName" class="form-label">First Name</label>
         <input asp-for="FirstName" class="form-control" />
         <span asp-validation-for="FirstName" class="text-danger"></span>
     </div>
@@ -22,11 +22,11 @@
     </div>
 
     <div class="mb-3">
-        <label asp-for="Phone" class="form-label">Téléphone</label>
+        <label asp-for="Phone" class="form-label">Phone</label>
         <input asp-for="Phone" class="form-control" />
         <span asp-validation-for="Phone" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-success">Enregistrer</button>
-    <a asp-action="Index" class="btn btn-secondary">Retour</a>
+    <button type="submit" class="btn btn-success">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
 </form>
