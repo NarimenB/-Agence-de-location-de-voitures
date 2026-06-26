@@ -34,6 +34,9 @@ public class BookingsController : Controller
     [ValidateAntiForgeryToken]
     public IActionResult Create(Booking booking)
     {
+        ModelState.Remove("Customer");
+        ModelState.Remove("Car");
+
         if (!ModelState.IsValid)
         {
             LoadSelectLists();
