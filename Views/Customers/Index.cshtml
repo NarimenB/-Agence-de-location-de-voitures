@@ -1,0 +1,27 @@
+@model IEnumerable<Locatic.Models.Customer>
+
+<h1>Clients</h1>
+
+<a asp-action="Create" class="btn btn-primary">Ajouter un client</a>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Email</th>
+            <th>Téléphone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td>@customer.LastName</td>
+                <td>@customer.FirstName</td>
+                <td>@customer.Email</td>
+                <td>@customer.Phone</td>
+            </tr>
+        }
+    </tbody>
+</table>
