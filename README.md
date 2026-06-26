@@ -14,7 +14,7 @@ and survives server restarts.
 
 ## Group Members
 - Narimen B — Data layer, models, database, brands & car models
-  -Melyssa Bertille — Cars & customers CRUD
+- Melyssa Bertille — Cars & customers CRUD
 -  Dihya Ouchene— Bookings & business rules
 
 ## Tech Stack
