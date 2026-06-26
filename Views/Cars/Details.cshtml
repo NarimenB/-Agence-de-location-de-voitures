@@ -1,0 +1,21 @@
+@model Locatic.Models.Car
+
+<h2>Car Details</h2>
+<dl class="row">
+    <dt class="col-sm-3">License Plate</dt>
+    <dd class="col-sm-9">@Model.LicensePlate</dd>
+    <dt class="col-sm-3">Brand</dt>
+    <dd class="col-sm-9">@Model.CarModel?.Brand?.Name</dd>
+    <dt class="col-sm-3">Model</dt>
+    <dd class="col-sm-9">@Model.CarModel?.Name</dd>
+    <dt class="col-sm-3">Year</dt>
+    <dd class="col-sm-9">@Model.Year</dd>
+    <dt class="col-sm-3">Daily Rate</dt>
+    <dd class="col-sm-9">@Model.DailyRate €</dd>
+    <dt class="col-sm-3">Seats</dt>
+    <dd class="col-sm-9">@Model.NumberOfSeats</dd>
+    <dt class="col-sm-3">Fuel Type</dt>
+    <dd class="col-sm-9">@Model.FuelType</dd>
+</dl>
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to list</a>

@@ -125,3 +125,4 @@ C:\Users\Narimen\Desktop\Projet DMN\Locatic\obj\Debug\net8.0\refint\Locatic.dll
 C:\Users\Narimen\Desktop\Projet DMN\Locatic\obj\Debug\net8.0\Locatic.pdb
 C:\Users\Narimen\Desktop\Projet DMN\Locatic\obj\Debug\net8.0\Locatic.genruntimeconfig.cache
 C:\Users\Narimen\Desktop\Projet DMN\Locatic\obj\Debug\net8.0\ref\Locatic.dll
+C:\Users\Narimen\Desktop\Projet DMN\Locatic\obj\Debug\net8.0\Locatic.sourcelink.json

@@ -1,0 +1,14 @@
+@model Locatic.Models.Customer
+
+<h2>Delete Customer</h2>
+<p>Are you sure you want to delete this customer?</p>
+<dl class="row">
+    <dt class="col-sm-3">Name</dt>
+    <dd class="col-sm-9">@Model.FirstName @Model.LastName</dd>
+    <dt class="col-sm-3">Email</dt>
+    <dd class="col-sm-9">@Model.Email</dd>
+</dl>
+<form asp-action="Delete" method="post">
+    <button type="submit" class="btn btn-danger">Yes, delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

@@ -1,0 +1,40 @@
+@model Locatic.ViewModels.CarFormViewModel
+
+<h2>Edit Car</h2>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+        <label asp-for="LicensePlate" class="form-label"></label>
+        <input asp-for="LicensePlate" class="form-control" />
+        <span asp-validation-for="LicensePlate" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Year" class="form-label"></label>
+        <input asp-for="Year" class="form-control" />
+        <span asp-validation-for="Year" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="DailyRate" class="form-label"></label>
+        <input asp-for="DailyRate" class="form-control" />
+        <span asp-validation-for="DailyRate" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="NumberOfSeats" class="form-label"></label>
+        <input asp-for="NumberOfSeats" class="form-control" />
+        <span asp-validation-for="NumberOfSeats" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="FuelType" class="form-label"></label>
+        <input asp-for="FuelType" class="form-control" />
+        <span asp-validation-for="FuelType" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="CarModelId" class="form-label">Car Model</label>
+        <select asp-for="CarModelId" asp-items="Model.CarModels" class="form-select">
+            <option value="">-- Select a Model --</option>
+        </select>
+        <span asp-validation-for="CarModelId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

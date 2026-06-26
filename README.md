@@ -14,8 +14,13 @@ and survives server restarts.
 
 ## Group Members
 - Narimen Boumaout — Data layer, models, database, brands & car models
+<<<<<<< HEAD
 - Melyssa Bertille— Cars & customers CRUD
 -  Dihya Ouchene— Bookings & business rules
+=======
+- Melyssa Bertille — Cars & customers CRUD
+- Dihya Ouchene — Bookings & business rules
+>>>>>>> 4c8875a (Fix: add Cars views, CarService, CarFormViewModel, navbar)
 
 ## Tech Stack
 - ASP.NET Core MVC (.NET 8)
@@ -43,4 +48,8 @@ and survives server restarts.
 2. Go to the `Locatic` folder
 3. Run `dotnet ef database update`
 4. Run `dotnet run`
+<<<<<<< HEAD
 5. Open `http://localhost:5207`
+=======
+5. Open `http://localhost:5207`
+>>>>>>> 4c8875a (Fix: add Cars views, CarService, CarFormViewModel, navbar)

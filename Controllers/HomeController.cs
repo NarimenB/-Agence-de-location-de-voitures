@@ -1,35 +1,25 @@
-using System.Diagnostics;
+using Locatic.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Locatic.Data;
-using Locatic.Models;
 
 namespace Locatic.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-    private readonly AppDbContext _db;
+    private readonly IBrandService _brandService;
 
-    public HomeController(ILogger<HomeController> logger, AppDbContext db)
+    public HomeController(IBrandService brandService)
     {
-        _logger = logger;
-        _db = db;
+        _brandService = brandService;
     }
 
     public IActionResult Index()
     {
-        var brands = _db.Brands.ToList();
+        var brands = _brandService.GetAll();
         return View(brands);
     }
 
     public IActionResult Privacy()
     {
         return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }

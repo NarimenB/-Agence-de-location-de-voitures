@@ -1,0 +1,33 @@
+@model IEnumerable<Locatic.Models.Booking>
+
+<h2>Bookings</h2>
+<a asp-action="Create" class="btn btn-primary mb-3">Add Booking</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Customer</th>
+            <th>Car</th>
+            <th>Brand & Model</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Days</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+            var days = (booking.EndDate - booking.StartDate).Days;
+            var total = days * booking.Car.DailyRate;
+            <tr>
+                <td>@booking.Customer.FirstName @booking.Customer.LastName</td>
+                <td>@booking.Car.LicensePlate</td>
+                <td>@booking.Car.CarModel?.Brand?.Name @booking.Car.CarModel?.Name</td>
+                <td>@booking.StartDate.ToString("dd/MM/yyyy")</td>
+                <td>@booking.EndDate.ToString("dd/MM/yyyy")</td>
+                <td>@days days</td>
+                <td>@total €</td>
+            </tr>
+        }
+    </tbody>
+</table>
