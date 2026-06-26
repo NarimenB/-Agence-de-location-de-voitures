@@ -1,0 +1,42 @@
+@model IEnumerable<Locatic.Models.Car>
+
+<h2>Cars</h2>
+
+<a asp-action="Create" class="btn btn-primary mb-3">
+    Add Car
+</a>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>License Plate</th>
+            <th>Year</th>
+            <th>Daily Rate</th>
+            <th>Seats</th>
+            <th>Fuel</th>
+            <th>Model</th>
+            <th>Brand</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var car in Model)
+        {
+            <tr>
+                <td>@car.LicensePlate</td>
+                <td>@car.Year</td>
+                <td>@car.DailyRate</td>
+                <td>@car.NumberOfSeats</td>
+                <td>@car.FuelType</td>
+                <td>@car.CarModel?.Name</td>
+                <td>@car.CarModel?.Brand?.Name</td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@car.Id" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@car.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
