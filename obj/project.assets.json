@@ -2569,11 +2569,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Narimen\\Desktop\\Projet DMN\\Locatic\\Locatic.csproj",
+      "projectUniqueName": "C:\\Users\\Narimen\\Desktop\\NVProjet\\-Agence-de-location-de-voitures\\Locatic.csproj",
       "projectName": "Locatic",
-      "projectPath": "C:\\Users\\Narimen\\Desktop\\Projet DMN\\Locatic\\Locatic.csproj",
+      "projectPath": "C:\\Users\\Narimen\\Desktop\\NVProjet\\-Agence-de-location-de-voitures\\Locatic.csproj",
       "packagesPath": "C:\\Users\\Narimen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Narimen\\Desktop\\Projet DMN\\Locatic\\obj\\",
+      "outputPath": "C:\\Users\\Narimen\\Desktop\\NVProjet\\-Agence-de-location-de-voitures\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Narimen\\AppData\\Roaming\\NuGet\\NuGet.Config"

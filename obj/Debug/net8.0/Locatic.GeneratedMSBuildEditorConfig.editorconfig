@@ -9,99 +9,99 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Locatic
 build_property.RootNamespace = Locatic
-build_property.ProjectDir = C:\Users\Narimen\Desktop\Projet DMN\Locatic\
+build_property.ProjectDir = C:\Users\Narimen\Desktop\NVProjet\-Agence-de-location-de-voitures\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Narimen\Desktop\Projet DMN\Locatic
+build_property.MSBuildProjectDirectory = C:\Users\Narimen\Desktop\NVProjet\-Agence-de-location-de-voitures
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Bookings/Create.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Bookings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Bookings/Index.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Bookings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Brands/Create.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Brands/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Brands/Index.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Brands/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/CarModels/Create.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/CarModels/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyTW9kZWxzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/CarModels/Index.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/CarModels/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyTW9kZWxzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Cars/Create.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Cars/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Cars/Delete.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Cars/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Cars/Details.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Cars/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Cars/Edit.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Cars/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Cars/Index.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Cars/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Customers/Create.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Customers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Customers/Delete.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Customers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Customers/Edit.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Customers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Customers/Index.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Customers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Home/Index.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Home/Privacy.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Shared/Error.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/_ViewImports.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/_ViewStart.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Narimen/Desktop/Projet DMN/Locatic/Views/Shared/_Layout.cshtml]
+[C:/Users/Narimen/Desktop/NVProjet/-Agence-de-location-de-voitures/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-cbrjyb6g5y
