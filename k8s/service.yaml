@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: locatic-app
+  namespace: locatic
+spec:
+  selector:
+    app: locatic
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: ClusterIP
