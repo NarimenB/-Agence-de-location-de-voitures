@@ -1,0 +1,15 @@
+{
+  "title": "Locatic Monitoring Dashboard",
+  "description": "Simple dashboard for Locatic application monitoring",
+  "panels": [
+    {
+      "title": "Application Status",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "up"
+        }
+      ]
+    }
+  ]
+}
