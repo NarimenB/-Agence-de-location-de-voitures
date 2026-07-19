@@ -14,3 +14,28 @@ The SQLite database file is stored at `/app/data/locatic.db` inside the containe
 
 ## Configuration
 The app reads its DB path from the `DB_PATH` environment variable, set in `configmap.yaml`:
+```yaml
+DB_PATH: "Data Source=/app/data/locatic.db"
+```
+This matches what's read in `Program.cs`:
+```csharp
+var dbPath = Environment.GetEnvironmentVariable("DB_PATH") ?? "Data Source=locatic.db";
+```
+
+## Health check
+A `/health` endpoint was added to the app (`Program.cs`) so Kubernetes can verify the container is responding correctly:
+```csharp
+builder.Services.AddHealthChecks();
+// ...
+app.MapHealthChecks("/health");
+```
+It's used by the readiness and liveness probes in `deployment.yaml`.
+
+## Image
+In production, the image should be the one published by the CI pipeline:
+```yaml
+image: ghcr.io/narimenb/locatic:latest
+```
+
+### Issue encountered: CPU architecture compatibility
+The image initially published by the CI pipeline was built only for `linux/amd64` (GitHub runners' architecture). On an Apple Silicon machine (arm64), the pod crashed with:
