@@ -4,10 +4,8 @@ using Locatic.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
 builder.Services.AddControllersWithViews();
 
-// Allow DB path to be configured via environment variable for Docker/Kubernetes
 var dbPath = Environment.GetEnvironmentVariable("DB_PATH") ?? "Data Source=locatic.db";
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(dbPath));
@@ -17,12 +15,10 @@ builder.Services.AddScoped<ICarModelService, CarModelService>();
 builder.Services.AddScoped<ICarService, CarService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IBookingService, BookingService>();
-
 builder.Services.AddHealthChecks();
 
 var app = builder.Build();
 
-// Apply migrations automatically on startup
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
@@ -39,6 +35,7 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 
+// Health check must be mapped before other routes
 app.MapHealthChecks("/health");
 
 app.MapControllerRoute(
