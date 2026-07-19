@@ -1,0 +1,17 @@
+---
+- name: Deploy Locatic application on Kubernetes
+  hosts: local
+  connection: local
+
+  tasks:
+
+    - name: Check Kubernetes connection
+      command: kubectl cluster-info
+      changed_when: false
+
+    - name: Apply Kubernetes manifests
+      command: kubectl apply -f ../../k8s/
+
+    - name: Check deployed resources
+      command: kubectl get all -n locatic
+      changed_when: false
