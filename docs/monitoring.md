@@ -2,47 +2,50 @@
 
 ## Overview
 
-The monitoring system is used to monitor the Locatic application deployed on Kubernetes.
+The project uses Prometheus and Grafana to monitor the Locatic application and Kubernetes resources.
 
-The monitoring stack uses Prometheus and Grafana.
+The monitoring stack helps to collect metrics, visualize system status and detect possible issues.
 
-## Monitoring Components
+## Monitoring Services
 
-The monitoring architecture contains:
+The monitoring solution contains:
 
-- Prometheus: collects application and Kubernetes metrics.
-- Grafana: displays metrics using dashboards.
+- Prometheus
+- Grafana
 
-## Prometheus
+Prometheus is responsible for collecting metrics.
 
-Prometheus is responsible for collecting metrics from Kubernetes services.
+Grafana is used to display dashboards and visualize monitoring data.
 
-It helps to monitor:
+## Monitored Services
 
+The following components are monitored:
+
+- Locatic application pods
+- Kubernetes nodes
+- Kubernetes services
 - Application availability
-- Kubernetes pods status
+- Resource usage
+
+## Metrics Collected
+
+The main metrics include:
+
 - CPU usage
 - Memory usage
-- Service health
+- Pod status
+- Container health
+- Service availability
+- Kubernetes resource information
 
+## Prometheus Deployment
 
-## Grafana
+Prometheus is installed using Helm with the Prometheus Community charts.
 
-Grafana provides dashboards to visualize monitoring information.
-
-The dashboard can display:
-
-- Locatic application status
-- Nginx status
-- Kubernetes resources
-- System performance
-
-
-## Installation
-
-The monitoring stack is installed using Helm.
-
-Add the Prometheus repository:
+Installation command:
 
 ```bash
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm install monitoring prometheus-community/kube-prometheus-stack \
+--namespace monitoring \
+--create-namespace \
+-f monitoring/prometheus/values.yaml
